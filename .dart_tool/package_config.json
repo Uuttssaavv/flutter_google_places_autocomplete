@@ -195,9 +195,9 @@
     },
     {
       "name": "rxdart",
-      "rootUri": "file:///Users/theutsavg/.pub-cache/hosted/pub.dartlang.org/rxdart-0.18.1",
+      "rootUri": "file:///Users/theutsavg/.pub-cache/hosted/pub.dartlang.org/rxdart-0.27.7",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "shelf",
@@ -338,7 +338,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2023-01-18T16:56:12.099609Z",
+  "generated": "2023-01-18T17:14:47.628643Z",
   "generator": "pub",
   "generatorVersion": "2.18.4"
 }

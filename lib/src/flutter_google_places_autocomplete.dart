@@ -296,7 +296,7 @@ abstract class GooglePlacesAutocompleteState extends State<GooglePlacesAutocompl
   GoogleMapsPlaces? _places;
   late bool _searching;
 
-  final _queryBehavior = BehaviorSubject<String>(seedValue: '');
+  final _queryBehavior = BehaviorSubject<String>();
 
   @override
   void initState() {
@@ -308,7 +308,7 @@ abstract class GooglePlacesAutocompleteState extends State<GooglePlacesAutocompl
 
     _queryTextController.addListener(_onQueryChange);
 
-    _queryBehavior.stream.debounce(const Duration(milliseconds: 300)).listen(doSearch);
+    _queryBehavior.stream.debounce((_) => TimerStream(true, Duration(milliseconds: 300))).listen(doSearch);
   }
 
   Future<Null> doSearch(String value) async {
